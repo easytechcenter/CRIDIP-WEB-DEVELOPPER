@@ -1,6 +1,7 @@
 <?php include ('include/header.php'); ?>
 <?php
 $titre_page = "Bienvenue";
+$sub_titre_page = "";
 //BREAD
 $li_start = "<li><a href='index.html'>".LOGICIEL."</a></li>";
 $li1 = "";
@@ -25,7 +26,7 @@ $li_end = "<li class='active'>".$titre_page."</li>";
     <!-- Page header -->
     <div class="page-header">
       <div class="page-title">
-        <h3>Wide left sidebar <small>Wide left sidebar blank page</small></h3>
+        <h3><?php echo $titre_page; ?> <small><?php echo $sub_titre_page; ?></small></h3>
       </div>
       <div id="reportrange" class="range">
         <div class="visible-xs header-element-toggle"><a class="btn btn-primary btn-icon"><i class="icon-calendar"></i></a></div>

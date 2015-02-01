@@ -1,7 +1,7 @@
 <?php 
 include ('define.php');
 include ('db.conf.php');
-include ('../control/error.php'); 
+include (SITE.''.DOSSIER.'control/error.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="fr">

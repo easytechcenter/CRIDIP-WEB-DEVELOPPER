@@ -28,10 +28,6 @@ $li_end = "<li class='active'>".$titre_page."</li>";
       <div class="page-title">
         <h3><?php echo $titre_page; ?> <small><?php echo $sub_titre_page; ?></small></h3>
       </div>
-      <div id="reportrange" class="range">
-        <div class="visible-xs header-element-toggle"><a class="btn btn-primary btn-icon"><i class="icon-calendar"></i></a></div>
-        <div class="date-range"></div>
-        <span class="label label-danger">9</span></div>
     </div>
     <!-- /page header -->
     <!-- Breadcrumbs line -->
@@ -64,6 +60,28 @@ $li_end = "<li class='active'>".$titre_page."</li>";
     <?php
     }
     ?>
+    <!-- Line Info -->
+    <ul class="info-blocks">
+      <li class="bg-primary">
+        <div class="top-info"><a href="#">Add new post</a><small>post management</small></div>
+        <a href="#"><i class="icon-pencil"></i></a><span class="bottom-info bg-danger">12 drafts in progress</span></li>
+      <li class="bg-success">
+        <div class="top-info"><a href="#">Site parameters</a><small>layout settings</small></div>
+        <a href="#"><i class="icon-cogs"></i></a><span class="bottom-info bg-primary">No updates</span></li>
+      <li class="bg-danger">
+        <div class="top-info"><a href="#">Site statistics</a><small>visits, users, orders stats</small></div>
+        <a href="#"><i class="icon-stats2"></i></a><span class="bottom-info bg-primary">3 new updates</span></li>
+      <li class="bg-info">
+        <div class="top-info"><a href="#">My messages</a><small>messages history</small></div>
+        <a href="#"><i class="icon-bubbles3"></i></a><span class="bottom-info bg-primary">24 new messages</span></li>
+      <li class="bg-warning">
+        <div class="top-info"><a href="#">Orders history</a><small>purchases statistics</small></div>
+        <a href="#"><i class="icon-cart2"></i></a><span class="bottom-info bg-primary">17 new orders</span></li>
+      <li class="bg-primary">
+        <div class="top-info"><a href="#">Invoices stats</a><small>invoices archive</small></div>
+        <a href="#"><i class="icon-coin"></i></a><span class="bottom-info bg-danger">9 new invoices</span></li>
+    </ul>
+    <!-- /Line Info -->
     <!-- Default panel -->
     <div class="panel panel-default">
       <div class="panel-heading">

@@ -1,6 +1,6 @@
 <?php include ('include/header.php'); ?>
 <?php
-$titre_page = "";
+$titre_page = "Bienvenue";
 //BREAD
 $li_start = "<li><a href='index.html'>".LOGICIEL."</a></li>";
 $li1 = "";

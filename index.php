@@ -45,6 +45,24 @@ $li_end = "<li class='active'>".$titre_page."</li>";
       </ul>
     </div>
     <!-- /breadcrumbs line -->
+    <?php
+    if($sql_connect == FALSE){
+    ?>
+    <div class="alert alert-danger fade in block-inner">
+    	<i class="icon-cancel-circle"></i> Erreur ! Impossible de ce connecter à la base de donnée 
+    </div>
+    <?php
+    }
+    ?>
+    <?php
+    if($sql_db == FALSE){
+    ?>
+    <div class="alert alert-danger fade in block-inner">
+    	<i class="icon-cancel-circle"></i> Erreur ! Impossible d'acceder à la base de donnée 
+    </div>
+    <?php
+    }
+    ?>
     <!-- Default panel -->
     <div class="panel panel-default">
       <div class="panel-heading">

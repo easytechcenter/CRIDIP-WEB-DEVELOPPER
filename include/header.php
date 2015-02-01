@@ -2,7 +2,7 @@
 session_start();
 include ('define.php');
 include ('db.conf.php');
-include (SITE."".DOSSIER."control/error.php");
+include ("../control/error.php");
 if (!isset($_SESSION['login'])) {
 header ("Location:".SITE."".DOSSIER."login.php");
 exit();

@@ -1,8 +1,22 @@
 <?php 
+session_start();
 include ('define.php');
 include ('db.conf.php');
-include (SITE.''.DOSSIER.'control/error.php'); 
+include (SITE.''.DOSSIER.'control/error.php');
+if (!isset($_SESSION['login'])) {
+header ("Location:".SITE_URL."".RACINE."login.php");
+exit();
+}
 ?>
+<?php
+if(MAINTENANCE == '1'){
+    header("Location: maintenance.php");
+}
+//Info utilisateur
+$result = mysql_query("SELECT `iduser`, `login`, `nom_user`, `prenom_user`, `adresse1_user`, `adresse2_user`, `cp_user`, `ville_user`, `pays_user`, `adresse_mail`, `telephone_user`, `poste_user`, `link_google`, `link_twitter`, `link_github` FROM utilisateur WHERE login = '".$_SESSION['login']. "'") or die(mysql_error());
+$donnees_login = mysql_fetch_array($result);
+?> 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -6,4 +6,6 @@ define("MODULE", "module/");
 
 define("LOGICIEL", "CRIDIP WEB DEVELOPPEMENT");
 
+define("MAINTENANCE", "0");
+
  ?>

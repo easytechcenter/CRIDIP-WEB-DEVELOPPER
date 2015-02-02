@@ -1,7 +1,7 @@
 <?php
-include ('include/db.conf.php');
-include ('include/define.php');
-include ('include/error.php');
+include ("include/db.conf.php");
+include ("include/define.php");
+include ("control/error.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +92,7 @@ include ('include/error.php');
         <i class="icon-users form-control-feedback"></i></div>
       <div class="form-group has-feedback">
         <label>MOT DE PASSE</label>
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" placeholder="Password" name="pass">
         <i class="icon-lock form-control-feedback"></i></div>
       <div class="row form-actions">
         <div class="col-xs-6">

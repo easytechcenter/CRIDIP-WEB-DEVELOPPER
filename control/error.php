@@ -1,4 +1,5 @@
-<?php 
+<?php
+include('../include/define.php');
 //ERREUR LOGIN
 define("E8777", "
 			<div class='alert alert-block alert-danger fade in block-inner'>

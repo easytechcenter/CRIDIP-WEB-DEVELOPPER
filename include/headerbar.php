@@ -1,12 +1,34 @@
 <div class="navbar navbar-inverse" role="navigation">
-  <div class="navbar-header"><a class="navbar-brand" href="#"><img src="images/logo.png" alt="Londinium"></a><a class="sidebar-toggle"><i class="icon-paragraph-justify2"></i></a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-icons"><span class="sr-only">Toggle navbar</span><i class="icon-grid3"></i></button>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar"><span class="sr-only">Toggle navigation</span><i class="icon-paragraph-justify2"></i></button>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">
+      <img src="<?php echo SITE,DOSSIER,ASSETS; ?>images/logo.png" alt="Londinium">
+    </a>
+    <a class="sidebar-toggle">
+      <i class="icon-paragraph-justify2"></i>
+    </a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-icons">
+      <span class="sr-only">Toggle navbar</span><i class="icon-grid3"></i>
+    </button>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar">
+      <span class="sr-only">Toggle navigation</span><i class="icon-paragraph-justify2"></i>
+    </button>
   </div>
   <ul class="nav navbar-nav navbar-right collapse" id="navbar-icons">
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-people"></i><span class="label label-default">2</span></a>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown">
+        <i class="icon-people"></i>
+        <span class="label label-default">2</span>
+      </a>
       <div class="popup dropdown-menu dropdown-menu-right">
-        <div class="popup-header"><a href="#" class="pull-left"><i class="icon-spinner7"></i></a><span>Activity</span><a href="#" class="pull-right"><i class="icon-paragraph-justify"></i></a></div>
+        <div class="popup-header">
+          <a href="#" class="pull-left">
+            <i class="icon-spinner7"></i>
+          </a>
+          <span>Activité</span>
+          <a href="#" class="pull-right">
+            <i class="icon-paragraph-justify"></i>
+          </a>
+        </div>
         <ul class="activity">
           <li> <i class="icon-cart-checkout text-success"></i>
             <div> <a href="#">Eugene</a> ordered 2 copies of <a href="#">OEM license</a> <span>14 minutes ago</span> </div>
